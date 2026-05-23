@@ -4,7 +4,7 @@ import os
 
 import requests
 import json
-API_KEY = os.getenv("API_KEY")
+API_KEY = st.secrets["API_KEY"]
 
 # =========================
 # PAGE CONFIG
