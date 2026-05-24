@@ -64,11 +64,12 @@ Tasks:
 2. Show corrected version(With improve sentence structure)
 3. Give rating out of 20(average Grammar, Clarity, Spelling,Sentence flow)
 4. Give scores for(Just score nothing more):
-   - Grammar(out of 20 based on grammatical error)
+   - Grammar(out of 20 based on grammatical error but not extremely hard grammar)
    - Clarity(out of 20)
    - Spelling(out of 20)
    - Sentence flow(out of 20)
-5.Simply explain errors(by a beautiful format)
+   Return concise JSON
+5.Simply explain errors(by a beautiful format,Fixed error which correction is essential)
 
 Student Text:
 {user_text}
