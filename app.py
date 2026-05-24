@@ -55,18 +55,20 @@ def analyze_text(user_text):
                 {
                     "role": "user",
                     "content": f"""
-You are an English Writing Analyzer(for who try to write fluent English).
+You are an English Writing Analyzer(for who try to write/learn fluent English).
 
 Analyze the following text carefully.
 
 Tasks:
 1. Always give same format result
 2. Show corrected version(With improve sentence structure)
-3. Give rating out of 20(average Grammar, Clarity, Spelling)
+3. Give rating out of 20(average Grammar, Clarity, Spelling,Sentence flow)
 4. Give scores for(Just score nothing more):
    - Grammar(out of 20 based on grammatical error)
    - Clarity(out of 20)
    - Spelling(out of 20)
+   - Sentence flow(out of 20)
+5.Simply explain errors(by a beautiful format)
 
 Student Text:
 {user_text}
