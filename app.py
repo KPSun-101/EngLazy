@@ -6,18 +6,14 @@ import requests
 import json
 API_KEY = st.secrets["API_KEY"]
 
-# =========================
 # PAGE CONFIG
-# =========================
 st.set_page_config(
     page_title="EngLazy!",
     page_icon="✍️",
     layout="centered"
 )
 
-# =========================
 # TITLE
-# =========================
 st.markdown(
     "<h1 style='text-align: center;'>EngLazy!</h1>",
     unsafe_allow_html=True
@@ -28,18 +24,14 @@ st.markdown(
     unsafe_allow_html=True
 )
 
-# =========================
 # TEXT INPUT
-# =========================
 text = st.text_area(
     "Write here:",
     height=250,
     placeholder="Write your daily experience in English..."
 )
 
-# =========================
 # ANALYZE FUNCTION
-# =========================
 def analyze_text(user_text):
 
     response = requests.post(
@@ -83,9 +75,7 @@ Student Text:
 
     return response.json()
 
-# =========================
 # BUTTON
-# =========================
 if st.button("Analyze My Writing"):
 
     if text.strip() == "":
